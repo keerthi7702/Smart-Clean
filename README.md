@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# 🧹 Smart Clean — Smart Phone Storage Cleanup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart Clean is a web-based phone storage cleanup and file management dashboard designed to help users organize files, identify unnecessary data, and manage storage efficiently through a simple interface.
 
-Currently, two official plugins are available:
+## ✨ Features
+- 📊 **Storage Dashboard** — View storage usage and available space.
+- 🔍 **Smart Scan** — Identify potential unnecessary files.
+- 📁 **File Management** — Organize files into categories.
+- 🖼️ **Media Organization** — Manage images, videos, and screenshots.
+- 🗑️ **Cleanup Suggestions** — Review files before deciding what to remove.
+- 📱 **Responsive Design** — Access the dashboard across different screen sizes.
+- 🎨 **User-Friendly Interface** — Simple navigation and clear storage insights.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Target Users
+- Smartphone users experiencing storage-full notifications.
+- Students managing screenshots, documents, and media.
+- Users who want a more organized digital storage experience.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend:** Web technologies
+- **Deployment:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*Update the technology stack to match the actual implementation.*
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
+🔗 [Smart Clean — Try the Application](https://m50281-1kndqy8rd-intelligence-agentic-models.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd smart-clean
+   ```
+3. Install dependencies according to your project setup.
+4. Start the development server using the command specified in `package.json`.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🔒 Important Note
+Smart Clean is a web-based prototype. Actual phone-wide storage scanning and deletion require appropriate device permissions and platform-specific integration. Review files before deleting them.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔮 Future Enhancements
+- Duplicate file detection.
+- Large file identification.
+- Junk file analysis.
+- Real-time storage monitoring.
+- Secure file deletion and recovery options.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👩‍💻 Author
+Developed as a project to explore smart storage management and user-friendly file organization.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⭐ **If you find this project useful, consider giving the repository a star!**
